@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  background: #00252a;
+  color: #00252a;
+}
+main {
+  width: 45%;
+  padding: 2em 5em;
+  border-radius: 5px;
+  background: #ebebeb;
+}
+#text {
+  font-size: 1.8em;
+  font-weight: 400;
+}
+#text::before {
+  content: url(https://img.icons8.com/ios/25/000000/quote-left.png);
+  margin-right: 8px;
+}
+#author {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: end;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#new-quote,
+#tweet-quote {
+  border-radius: 5px;
+  border: 1px solid #00252a;
+  background: #00252a;
+  cursor: pointer;
+}
+#new-quote {
+  width: 8em;
+  font-size: 0.8em;
+  color: white;
+}
+#tweet-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5em;
+}
+#tweet-quote > img {
+  width: 25px;
+}
+#new-quote:hover,
+#tweet-quote:hover {
+  background-color: white;
+  color: #00252a;
+}
+
+@media (max-device-width: 900px){
+  main{
+    width: 85%;
+    padding: 1.5em 3em;
+  }
+}
